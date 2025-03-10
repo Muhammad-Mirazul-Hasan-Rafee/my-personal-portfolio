@@ -26,8 +26,9 @@ const Navbar = () => {
             src={logo}
             alt="logo"
           />
-          <p className="text-white text-[18px] font-bold cursor-pointer">
-            Rafee <span className="sm:block hidden">| React Developer</span>
+          <p className="text-white text-[18px] font-bold cursor-pointer flex ">
+            Rafee &nbsp;
+            <span className="sm:block hidden"> | React Development</span>
           </p>
         </Link>
 
@@ -56,7 +57,7 @@ const Navbar = () => {
             alt="menu"
             onClick={() => {
               setToggle(!toggle);
-            }} 
+            }}
           />
 
           {/* Actual Menu */}
@@ -66,7 +67,6 @@ const Navbar = () => {
               !toggle ? "hidden" : "flex"
             } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
           >
-
             {/* right side e  About , Work , Contact dekhanor jnno */}
             <ul className="list-none flex justify-end items-start flex-col gap-4">
               {/* onClick korle title ta white thakbe and browser o name ta dekhabe== active dekhabe name ta */}
@@ -77,10 +77,8 @@ const Navbar = () => {
                     active === link.title ? "text-white" : "text-secondary"
                   } font-poppins font-medium cursor-pointer text-base`}
                   onClick={() => {
-
                     setToggle(!toggle); //close kore dibe div k jokhn specific link e click kora hbe
                     setActive(link.title);
-
                   }}
                 >
                   <a href={`#${link.id}`}>{link.title}</a>
