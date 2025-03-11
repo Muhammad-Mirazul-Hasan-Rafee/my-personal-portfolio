@@ -1,12 +1,11 @@
 import React , { Suspense , useState , useEffect } from "react";
-import { Canvas , extend } from "@react-three/fiber";
+import { Canvas } from "@react-three/fiber";
 import { OrbitControls , Preload , useGLTF , Html } from "@react-three/drei";
-import CanvasLoader from "../Loader.jsx";
-import { Mesh } from "three";
+import CanvasLoader from "../Loader";
 
 const Computers = () => {
   const computer = useGLTF("./public/desktop_pc/scene.gltf");
-  console.log(computer);
+  
   return (
     // three js create create er jonno mesh tag use korte hbe
 
@@ -35,6 +34,7 @@ const Computers = () => {
 
 
 const ComputersCanvas = () =>{
+  const [isMobile , setIsMobile] = useState(false);
   return(
     <Canvas 
     frameloop="demand" 
@@ -42,8 +42,9 @@ const ComputersCanvas = () =>{
      camera={{position:[20 , 3 , 5] , fov: 25 }}
     gl={{preserveDrawingBuffer:true}}>
 
-      {/* Suspense is rom react  , eta loader pete help korbe jokhn model ta loading hote thakbe */}
-      <Suspense fallback={CanvasLoader}>
+      {/* ######## very important#########!!!!!! Suspense is rom react  , eta loader pete help korbe jokhn model ta loading hote thakbe */}
+       
+      <Suspense fallback={ CanvasLoader}> 
        
 
        {/* OrbitControls model ta k left and right e move korte help korbe || enableZoom er value false hbe karon amra eta k zoom korbo na.. ||       maxPolarAngle and minPolarAngle -> eigulo use kora hocche jno model ta sob jayga the rotate na kora jay, infact specific angle or axis thei rotate kora jno jay etai target*/}
