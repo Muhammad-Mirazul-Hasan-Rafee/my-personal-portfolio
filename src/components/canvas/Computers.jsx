@@ -3,7 +3,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls , Preload , useGLTF , Html } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
-const Computers = () => {
+const Computers = ({isMobile}) => {
   const computer = useGLTF("./public/desktop_pc/scene.gltf");
   
   return (
@@ -24,7 +24,7 @@ const Computers = () => {
 
 
       {/* object pass korar jnno primitive use korte hbe */}
-      <primitive object={computer.scene} scale={0.75} position={[0 , -3.25 , -1.5]} rotation={[-0.01 , -0.2 , -0.1]} />
+      <primitive object={computer.scene} scale={isMobile ? 0.7 : 0.75} position={isMobile ?[0 , -3 , -2.2] : [0 , -3.25 , -1.5]} rotation={[-0.01 , -0.2 , -0.1]} />
 
     </mesh>
   )
@@ -35,16 +35,34 @@ const Computers = () => {
 
 const ComputersCanvas = () =>{
   const [isMobile , setIsMobile] = useState(false);
+
+  // useEffect diye isMobile er value change kora hocche
+  useEffect(()=>{
+    // add eventListner for changes to the screen size
+    const mediaQuery = window.matchMedia('(max-width:500px)');
+    setIsMobile(mediaQuery.matches);
+    const handleMediaQueryChange = (event)=>{
+      setIsMobile(event.matches);
+
+      // need to add a eventListner and after that remove it 
+      mediaQuery.addEventListener('change' , handleMediaQueryChange);
+      return() =>{
+        mediaQuery.removeEventListener('change' , handleMediaQueryChange);
+      }
+    };
+
+  }, []);
+
   return(
     <Canvas 
     frameloop="demand" 
     shadows
      camera={{position:[20 , 3 , 5] , fov: 25 }}
-    gl={{preserveDrawingBuffer:true}}>
+    gl={{preserveDrawingBuffer:true}} className="relative z-0">
 
       {/* ######## very important#########!!!!!! Suspense is rom react  , eta loader pete help korbe jokhn model ta loading hote thakbe */}
        
-      <Suspense fallback={ CanvasLoader}> 
+      <Suspense fallback={ <CanvasLoader/>}> 
        
 
        {/* OrbitControls model ta k left and right e move korte help korbe || enableZoom er value false hbe karon amra eta k zoom korbo na.. ||       maxPolarAngle and minPolarAngle -> eigulo use kora hocche jno model ta sob jayga the rotate na kora jay, infact specific angle or axis thei rotate kora jno jay etai target*/}
@@ -53,7 +71,7 @@ const ComputersCanvas = () =>{
       maxPolarAngle={Math.PI/2}
       minPolarAngle={Math.PI/2}/>
 
-      <Computers/>
+      <Computers isMobile={isMobile} />
 
       </Suspense>
       <Preload all />
