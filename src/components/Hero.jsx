@@ -30,8 +30,14 @@ const Hero = () => {
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>I develop frontend using <br className="sm:block hidden"/> Three Js and React</p>
         </div>
       </div>
-
       <ComputersCanvas/>
+
+
+      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+
+        <a href="#about"></a>
+
+      </div>
     </section>
   );
 };
