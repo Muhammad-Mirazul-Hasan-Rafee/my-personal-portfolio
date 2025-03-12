@@ -44,11 +44,9 @@ const About = () => {
     <motion.p variants={fadeIn("" , "" , 0.1 , 1)}
     className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
     >
-    Welcome to my digital space, where creativity meets functionality, and innovation transforms into seamless user experiences. As a passionate web developer with expertise in HTML, CSS, JavaScript, and React, I thrive on crafting visually stunning and highly responsive websites that not only captivate but also deliver exceptional performance. My journey in web development is driven by a relentless pursuit of excellence, a keen eye for detail, and an unwavering commitment to turning complex challenges into elegant solutions.
+    Welcome to my digital space, where creativity meets functionality. As a passionate web developer skilled in HTML, CSS, JavaScript, and React, I create visually stunning, responsive websites that deliver exceptional performance. My focus is on turning complex challenges into elegant solutions, always staying ahead with the latest technologies.
 
-I am a quick learner, always staying ahead of the curve with the latest technologies and trends, ensuring that every project I undertake is not just modern but future-proof. My adaptive nature allows me to navigate through intricate problems with ease, delivering results that exceed expectations. Whether it's building dynamic user interfaces, optimizing for speed and scalability, or creating immersive web experiences, I bring a unique blend of technical expertise and creative vision to every project.
-
-Let’s collaborate to bring your ideas to life and make your digital presence truly extraordinary. Together, we can create something that not only meets your needs but also leaves a lasting impression. Your vision, combined with my skills, can make your life easier and your brand unforgettable. Let’s build the future of the web, one line of code at a time.
+Let’s collaborate to bring your ideas to life and make your digital presence extraordinary. Together, we can build something that not only meets your needs but also leaves a lasting impression. Your vision, combined with my skills, can make your brand unforgettable. Let’s shape the future of the web, one line of code at a time.
 </motion.p>
 
 <div className="mt-20 flex flex-wrap gap-10">
