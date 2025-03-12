@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { services } from "../constants";
 import { fadeIn , textVariant } from "../utils/motion";
+import { SectionWrapper } from "../Higher_Order_Component";
 
 
 const ServiceCard = ({index , title , icon})=>{
@@ -21,7 +22,8 @@ const ServiceCard = ({index , title , icon})=>{
         }}
         className="flex justify-evenly items-center flex-col bg-tertiary rounded-[20px] px-12 py-5 min-h-[280px]"
         >
-          <img src={icon} alt={title} className="w-16 h-16 object-contain" />
+          <img src={icon} alt={title} className="w-16 h-16 object-contain"/>
+          <h3 className="text-center font-bold text-white text-[20px]">{title}</h3>
 
         </div>
 
@@ -62,4 +64,4 @@ Let’s collaborate to bring your ideas to life and make your digital presence t
   )
 }
 
-export default About
+export default SectionWrapper (About , "about");
