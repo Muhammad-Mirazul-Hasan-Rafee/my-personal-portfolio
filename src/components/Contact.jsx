@@ -5,13 +5,40 @@ import {styles} from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../Higher_Order_Component";
 import { slideIn } from "../utils/motion";
+
+
+
+
 const Contact = () => {
   const formRef = useRef();
   const [form , setForm] = useState({name:"" , email: "" , message: "" ,});
 
 
-  const handleChange = (e)=>{};
-  const handleSubmit = (e)=>{};
+  const handleChange = (e)=>{
+    const {name , value} = e.target;
+    setForm({...form , [name]: value});
+  };
+  const handleSubmit = (e)=>{
+    e.preventDefault();
+    setLoading(true);
+
+    // calling email js library
+    emailjs.send('service_wrdf0bo' , 'template_fnn1x0a' , {form_name:form.name , to_name:'Rafee' , form_email:form.email , to_email:'rafeehasan88@gmail.com' , message:form.message} , 'HKPIb_fZUg10CJZ4I')
+    .then(()=>{
+      setLoading(false);
+      alert('Thanks for your message! I will get back to you as soon as possible.');
+      // reset form
+      setForm({
+        name:'',
+        email:'',
+        message:'',
+      })
+    }, (error)=>{
+      setLoading(false);
+      console.log(error);
+      alert('Something went wrong!');
+    })
+  };
 
 
   // For loading
@@ -38,12 +65,12 @@ const Contact = () => {
           </label>
           {/* For Email */}
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your Message</span>
+            <span className="text-white font-medium mb-4">Your Email</span>
             <input type="email" name="email" value={form.email} onChange={handleChange} placeholder="What's your email?" className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium" />
           </label>
           {/* For Message */}
           <label className="flex flex-col">
-            <span className="text-white font-medium mb-4">Your Name</span>
+            <span className="text-white font-medium mb-4">Your Message</span>
             <textarea rows="7" name="message" value={form.message} onChange={handleChange} placeholder="What do you want to say?" className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium" />
           </label>
 
