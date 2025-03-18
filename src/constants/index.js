@@ -23,6 +23,9 @@ import {
   jobit,
   tripguide,
   threejs,
+  team,
+  gadget,
+  coupon,
 } from "../assets";
 
 export const navLinks = [
@@ -116,7 +119,7 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Layout Design",
+    title: "React.js Developer",
     company_name: "Starbucks",
     icon: starbucks,
     iconBg: "#383E56",
@@ -129,7 +132,7 @@ const experiences = [
     ],
   },
   {
-    title: "Raw JavaScript",
+    title: "React Native Developer",
     company_name: "Tesla",
     icon: tesla,
     iconBg: "#E6DEDD",
@@ -142,7 +145,7 @@ const experiences = [
     ],
   },
   {
-    title: "Rest API | Context API",
+    title: "Web Developer",
     company_name: "Shopify",
     icon: shopify,
     iconBg: "#383E56",
@@ -155,20 +158,7 @@ const experiences = [
     ],
   },
   {
-    title: "React",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Firebase Authentication",
+    title: "Full stack Developer",
     company_name: "Meta",
     icon: meta,
     iconBg: "#E6DEDD",
@@ -213,28 +203,29 @@ const projects = [
   {
     name: "My Special Team",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Web-based platform that allows authority to select their team players and can able to group them in a different section. Players bidding price and details are included also. The main purpose is to select the best eleven.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "react_router",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "tailwindcss",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: team,
+    source_code_link: "https://github.com/Muhammad-Mirazul-Hasan-Rafee/My-Special-Team",
+    live_site_link: "https://special-team-knights.netlify.app/",
   },
   {
     name: "Gadget Heaven",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Web application that enables users to select their specific category wise items and also ensures to save them at the cartlist wishlist as well as locally. Statistics are shown also for particular category.",
     tags: [
       {
         name: "react",
@@ -245,33 +236,36 @@ const projects = [
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "tailwindcss",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: gadget,
+    source_code_link: "https://github.com/Muhammad-Mirazul-Hasan-Rafee/Gadget-Heaven",
+    live_site_link: "https://gadget-heaven-global.netlify.app/",
   },
   {
     name: "Coupon Collection",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "A comprehensive coupon collecting platform that allows users to book coupons, show details for each coupon which are available. Private Routing , Context Api and Authentication are used here in this site",
     tags: [
       {
-        name: "nextjs",
+        name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "react_router",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "firebase",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: coupon,
+    source_code_link: "https://github.com/Muhammad-Mirazul-Hasan-Rafee/coupon-collecting-app",
+    live_site_link: "coupon-collections.netlify.app",
+
   },
 ];
 

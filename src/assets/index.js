@@ -30,6 +30,10 @@ import carrent from "./carrent.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
+import team from "./team.png";
+import gadget from "./Gadget.png";
+import coupon from "./coupon.png";
+
 export {
   logo,
   backend,
@@ -59,4 +63,8 @@ export {
   carrent,
   jobit,
   tripguide,
+  team,
+  gadget,
+  coupon,
+  
 };
