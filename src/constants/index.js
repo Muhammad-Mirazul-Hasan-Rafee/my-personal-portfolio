@@ -26,6 +26,11 @@ import {
   team,
   gadget,
   coupon,
+  house,
+  donate,
+  architect,
+  bank,
+  pet
 } from "../assets";
 
 export const navLinks = [
@@ -42,7 +47,12 @@ export const navLinks = [
     title: "Contact",
   },
 ];
-
+const gitHubLinkedIn=[
+  {
+    githublink: "https://github.com/Muhammad-Mirazul-Hasan-Rafee",
+    linkedinlink: "https://www.linkedin.com/in/muhammad-mirazul-hasan-rafee-177463217/",
+  },
+]
 const services = [
   {
     title: "Frontend Developer",
@@ -119,11 +129,11 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "g3-architects-website",
+    company_name: "Simple layout",
+    icon: architect,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "August 10, 2024",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -132,24 +142,11 @@ const experiences = [
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "House-Design-Website",
+    company_name: "Responsive layout",
+    icon: house,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "August 23, 2024",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -158,11 +155,37 @@ const experiences = [
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    title: "Donate Bangladesh",
+    company_name: "JavaScript-Document Object Model",
+    icon: donate,
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "November 7, 2024",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "Bank-deposit-withdraw-balance",
+    company_name: "Simple Bank Calculation Thought using DOM",
+    icon: bank,
+    iconBg: "#E6DEDD",
+    date: "March 8, 2024",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "Pet Adoption Site",
+    company_name: "Integration Api With Intermediate JavaScript",
+    icon: pet,
+    iconBg: "#E6DEDD",
+    date: "November 24, 2024",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",

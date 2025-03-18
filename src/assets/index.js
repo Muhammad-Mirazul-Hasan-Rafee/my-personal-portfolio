@@ -3,6 +3,7 @@ import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
+import liveserver from "./liveserver.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
@@ -34,12 +35,19 @@ import team from "./team.png";
 import gadget from "./Gadget.png";
 import coupon from "./coupon.png";
 
+import house from "./house.png";
+import donate from "./donate.png";
+import architect from "./architect.png";
+import bank from "./bank.png";
+import pet from "./pet.png";
+
 export {
   logo,
   backend,
   creator,
   mobile,
   web,
+  liveserver,
   github,
   menu,
   close,
@@ -66,5 +74,10 @@ export {
   team,
   gadget,
   coupon,
+  house,
+  donate,
+  architect,
+  bank,
+  pet,
   
 };

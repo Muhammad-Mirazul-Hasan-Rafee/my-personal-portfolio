@@ -5,6 +5,8 @@ import { logo, menu, close } from "../assets";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const githublink = "https://github.com/Muhammad-Mirazul-Hasan-Rafee";
+  const linkedin = "https://www.linkedin.com/in/muhammad-mirazul-hasan-rafee-177463217/";
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
   return (
@@ -29,6 +31,11 @@ const Navbar = () => {
           <p className="text-white text-[18px] font-bold cursor-pointer flex ">
             Rafee &nbsp;
             <span className="sm:block hidden"> | React Development</span>
+          </p>
+
+          <p className="ml-8 text-white text-[12px] font-bold cursor-pointer flex">
+          <aside className="underline" onClick={() => window.open(githublink, "_blank")}>Github</aside> &nbsp; | &nbsp;
+          <aside className="underline" onClick={() => window.open(linkedin, "_blank")}>LinkedIn</aside>
           </p>
         </Link>
 

@@ -44,7 +44,7 @@ const About = () => {
     <motion.p variants={fadeIn("" , "" , 0.1 , 1)}
     className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
     >
-    Welcome to my digital space, where creativity meets functionality. As a passionate web developer skilled in HTML, CSS, JavaScript, and React, I create visually stunning, responsive websites that deliver exceptional performance. My focus is on turning complex challenges into elegant solutions, always staying ahead with the latest technologies.
+    Welcome to my digital space, where creativity meets functionality. As a passionate web developer skilled in HTML, CSS, JavaScript, React, Firebase Authentication and Email JS. I create visually stunning, responsive websites that deliver exceptional performance. I am now learning <span className="font-semibold text-white">Three JS</span> and <span className="font-semibold text-white">Backend Technologies</span>. My focus is on turning complex challenges into elegant solutions, always staying ahead with the latest technologies.
 
 Let’s collaborate to bring your ideas to life and make your digital presence extraordinary. Together, we can build something that not only meets your needs but also leaves a lasting impression. Your vision, combined with my skills, can make your brand unforgettable. Let’s shape the future of the web, one line of code at a time.
 </motion.p>
