@@ -24,7 +24,7 @@ const Navbar = () => {
           }}
         >
           <img
-            className="w-9 h-9 object-contain rounded-full"
+            className="w-9 h-9 rounded-full"
             src={logo}
             alt="logo"
           />
