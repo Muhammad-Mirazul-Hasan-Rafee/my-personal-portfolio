@@ -4,7 +4,7 @@ import { OrbitControls , Preload , useGLTF , Html } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
 const Computers = ({isMobile}) => {
-  const computer = useGLTF("./public/desktop_pc/scene.gltf");
+  const computer = useGLTF("/public/desktop_pc/scene.gltf");
   
   return (
     // three js create create er jonno mesh tag use korte hbe
