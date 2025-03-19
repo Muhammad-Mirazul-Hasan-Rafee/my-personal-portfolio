@@ -4,24 +4,14 @@ import {
   creator,
   web,
   javascript,
-  typescript,
   html,
   css,
   reactjs,
-  redux,
   tailwind,
   nodejs,
   mongodb,
   git,
   figma,
-  docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
   team,
   gadget,
@@ -86,16 +76,8 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
     name: "React JS",
     icon: reactjs,
-  },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
   },
   {
     name: "Tailwind CSS",
@@ -121,77 +103,75 @@ const technologies = [
     name: "figma",
     icon: figma,
   },
-  {
-    name: "docker",
-    icon: docker,
-  },
 ];
 
-const experiences = [
+const smallProjects = [
   {
     title: "g3-architects-website",
-    company_name: "Simple layout",
+    subtitle: "Simple layout",
     icon: architect,
     iconBg: "#383E56",
     date: "August 10, 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed a simple web application layout using html and css.",
+    
     ],
+    github: "https://github.com/Muhammad-Mirazul-Hasan-Rafee/g3-architect-website",
+    livesite: "https://g3-architects-global.netlify.app",
   },
   {
     title: "House-Design-Website",
-    company_name: "Responsive layout",
+    subtitle: "Responsive layout",
     icon: house,
     iconBg: "#383E56",
     date: "August 23, 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed a simple page and maintained it's responsiveness.",  
     ],
+    github: "https://github.com/Muhammad-Mirazul-Hasan-Rafee/House-Design-website",
+    livesite: "https://house-design-approach.netlify.app",
   },
   {
     title: "Donate Bangladesh",
-    company_name: "JavaScript-Document Object Model",
+    subtitle: "JavaScript-Document Object Model",
     icon: donate,
     iconBg: "#E6DEDD",
     date: "November 7, 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Built and maintained web application for donation purpose.",
+      "JavaScript DOM had been applied in this context.",
+     
     ],
+    github: "https://github.com/Muhammad-Mirazul-Hasan-Rafee/donate-Bangladesh",
+    livesite: "https://cooperational-donate-bangladesh.netlify.app",
   },
   {
     title: "Bank-deposit-withdraw-balance",
-    company_name: "Simple Bank Calculation Thought using DOM",
+    subtitle: "Simple Bank Calculation Thought using DOM",
     icon: bank,
     iconBg: "#E6DEDD",
     date: "March 8, 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "This site contains simple design with the idea of deposit and withdraw account balance.",
+      "The functionalities were created with document object model.",
+    
     ],
+    github: "https://github.com/Muhammad-Mirazul-Hasan-Rafee/Bank-deposit-withdraw-balance",
+    livesite: "https://bankdepositecalculation.netlify.app",
   },
   {
     title: "Pet Adoption Site",
-    company_name: "Integration Api With Intermediate JavaScript",
+    subtitle: "Integration Api With Intermediate JavaScript",
     icon: pet,
     iconBg: "#E6DEDD",
     date: "November 24, 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "An interesting site for pet lovers!",
+      "With the combination of api as well as intermediate javascript this site allows user to choose their pets , see info and save the images of the pets. ",
+   
     ],
+    github: "https://github.com/Muhammad-Mirazul-Hasan-Rafee/pet-adoption-site",
+    livesite: "https://pet-adoption-jenius.netlify.app",
   },
 ];
 
@@ -292,4 +272,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, smallProjects, testimonials, projects };

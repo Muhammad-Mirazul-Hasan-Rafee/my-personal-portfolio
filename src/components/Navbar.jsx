@@ -33,9 +33,9 @@ const Navbar = () => {
             <span className="sm:block hidden"> | React Development</span>
           </p>
 
-          <p className="ml-8 text-white text-[12px] font-bold cursor-pointer flex">
-          <aside className="underline" onClick={() => window.open(githublink, "_blank")}>Github</aside> &nbsp; | &nbsp;
-          <aside className="underline" onClick={() => window.open(linkedin, "_blank")}>LinkedIn</aside>
+          <p className="ml-8 text-white text-[12px] font-bold cursor-pointer flex md:grid-rows-2">
+          <strong className="underline" onClick={() => window.open(githublink, "_blank")}>Github</strong> &nbsp; <span>|</span> &nbsp;
+          <strong className="underline" onClick={() => window.open(linkedin, "_blank")}>LinkedIn</strong>
           </p>
         </Link>
 
