@@ -267,8 +267,7 @@ const projects = [
     ],
     image: coupon,
     source_code_link: "https://github.com/Muhammad-Mirazul-Hasan-Rafee/coupon-collecting-app",
-    live_site_link: "coupon-collections.netlify.app",
-
+    live_site_link: "https://coupon-collections.netlify.app",
   },
 ];
 
