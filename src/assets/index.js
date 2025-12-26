@@ -33,8 +33,7 @@ import tripguide from "./tripguide.png";
 
 import team from "./team.png";
 import gadget from "./Gadget.png";
-import coupon from "./coupon.png";
-import gamepulse from "./gamepulse.JPG";
+import gamepulse from "./gamepulse.png";
 
 import house from "./house.png";
 import donate from "./donate.png";
@@ -74,7 +73,6 @@ export {
   tripguide,
   team,
   gadget,
-  coupon,
  gamepulse,
   house,
   donate,
