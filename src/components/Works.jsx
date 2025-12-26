@@ -113,7 +113,7 @@ const Works = () => {
           repositories reflect a deep passion for solving intricate challenges
           and delivering elegant, scalable solutions. Each repository tells a
           story of innovation, precision, and effective project
-          management—whether it’s building robust systems, optimizing
+          management-whether it’s building robust systems, optimizing
           algorithms, or leveraging cutting-edge technologies. These works
           highlight my ability to navigate complexity, drive results, and
           continuously evolve as a problem-solver and leader in the tech space.
