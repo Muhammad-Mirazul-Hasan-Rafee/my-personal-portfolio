@@ -15,7 +15,6 @@ import {
   threejs,
   team,
   gadget,
-  coupon,
  gamepulse,
   house,
   donate,
@@ -247,28 +246,6 @@ const projects = [
     image: gadget,
     source_code_link: "https://github.com/Muhammad-Mirazul-Hasan-Rafee/Gadget-Heaven",
     live_site_link: "https://gadget-heaven-global.netlify.app/",
-  },
-  {
-    name: "Coupon Collection",
-    description:
-      "A comprehensive coupon collecting platform that allows users to book coupons, show details for each coupon which are available. Private Routing , Context Api and Authentication are used here in this site",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "react_router",
-        color: "green-text-gradient",
-      },
-      {
-        name: "firebase",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: coupon,
-    source_code_link: "https://github.com/Muhammad-Mirazul-Hasan-Rafee/coupon-collecting-app",
-    live_site_link: "https://coupon-collections.netlify.app",
   },
   {
     name: "gamepulse Web App",
