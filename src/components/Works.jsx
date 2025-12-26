@@ -1,23 +1,31 @@
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { liveserver , github } from "../assets";
+import { liveserver, github } from "../assets";
 import { SectionWrapper } from "../Higher_Order_Component";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
-const ProjectCard = ({index , name , description , tags , image , live_site_link , source_code_link})=>{
-  return(
-    <motion.div variants={fadeIn("up" , "spring", index*0.5 , 0.75)}>
-     <Tilt
-     options={{
-      max: 45,
-      scale: 1,
-      speed: 450,
-     }}
-     className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
-     >
-      {/* <div className="relative w-full h-[230px]">
+const ProjectCard = ({
+  index,
+  name,
+  description,
+  tags,
+  image,
+  live_site_link,
+  source_code_link,
+}) => {
+  return (
+    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
+      <Tilt
+        options={{
+          max: 45,
+          scale: 1,
+          speed: 450,
+        }}
+        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+      >
+        {/* <div className="relative w-full h-[230px]">
 
         <img className="w-full h-full object-cover rounded-2xl" src={image} alt={name} />
 
@@ -35,59 +43,58 @@ const ProjectCard = ({index , name , description , tags , image , live_site_link
          </div>
       </div> */}
 
-<div className="relative w-full h-[230px]">
-          <img 
-            className="w-full h-full object-cover rounded-2xl" 
-            src={image} 
-            alt={name} 
+        <div className="relative w-full h-[230px]">
+          <img
+            className="w-full h-full object-cover rounded-2xl"
+            src={image}
+            alt={name}
           />
 
           {/* Single container for both icons (FIXED VERSION) */}
           <div className="absolute inset-0 flex justify-between items-start p-3">
             {/* GitHub Icon (Left) */}
-            <div 
+            <div
               onClick={() => window.open(live_site_link, "_blank")}
               className="bg-black w-10 h-10 rounded-full flex justify-center items-center cursor-pointer hover:opacity-80 transition-opacity"
             >
-              <img 
-                src={liveserver} 
-                alt="Live" 
-                className="w-1/2 h-1/2 rounded-full object-contain" 
+              <img
+                src={liveserver}
+                alt="Live"
+                className="w-1/2 h-1/2 rounded-full object-contain"
               />
             </div>
 
             {/* Live Site Icon (Right) */}
-            <div 
+            <div
               onClick={() => window.open(source_code_link, "_blank")}
               className="bg-black w-10 h-10 rounded-full flex justify-center items-center cursor-pointer hover:opacity-80 transition-opacity"
             >
-              <img 
-                src={github} 
-                alt="Live Demo" 
-                className="w-1/2 h-1/2 rounded-full object-contain" 
+              <img
+                src={github}
+                alt="Live Demo"
+                className="w-1/2 h-1/2 rounded-full object-contain"
               />
             </div>
           </div>
         </div>
 
-      {/* Name and description */}
-      <div className="mt-5">
-        <h3 className="text-white font-bold text-[24px]">{name}</h3>
-        <p className="mt-2 text-secondary text-[14px]">{description}</p>
-      </div>
+        {/* Name and description */}
+        <div className="mt-5">
+          <h3 className="text-white font-bold text-[24px]">{name}</h3>
+          <p className="mt-2 text-secondary text-[14px]">{description}</p>
+        </div>
 
-      <div className="mt-4 flex flex-wrap gap-2">
-        {tags.map((tag)=>
-        (
-          <p key={tag.name} className={`text-[14px] ${tag.color}`}>#{tag.name}</p>
-        ))}
-      </div>
-
-     </Tilt>
+        <div className="mt-4 flex flex-wrap gap-2">
+          {tags.map((tag) => (
+            <p key={tag.name} className={`text-[14px] ${tag.color}`}>
+              #{tag.name}
+            </p>
+          ))}
+        </div>
+      </Tilt>
     </motion.div>
   );
-
-}
+};
 
 const Works = () => {
   return (
@@ -99,24 +106,25 @@ const Works = () => {
 
       <div className="w-full flex">
         <motion.p
-        variants={fadeIn("" , "" , 0.1 , 1)}
-        className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
+          variants={fadeIn("", "", 0.1, 1)}
+          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
-          Through a collection of thoughtfully crafted projects, my GitHub repositories reflect a deep passion for solving intricate challenges and delivering elegant, scalable solutions. Each repository tells a story of innovation, precision, and effective project management—whether it’s building robust systems, optimizing algorithms, or leveraging cutting-edge technologies. These works highlight my ability to navigate complexity, drive results, and continuously evolve as a problem-solver and leader in the tech space.
-
+          Through a collection of thoughtfully crafted projects, my GitHub
+          repositories reflect a deep passion for solving intricate challenges
+          and delivering elegant, scalable solutions. Each repository tells a
+          story of innovation, precision, and effective project
+          management—whether it’s building robust systems, optimizing
+          algorithms, or leveraging cutting-edge technologies. These works
+          highlight my ability to navigate complexity, drive results, and
+          continuously evolve as a problem-solver and leader in the tech space.
         </motion.p>
       </div>
 
       <div className="mt-20 flex flex-wrap gap-7">
-
-        {projects.map((project , index) =>
-        (
+        {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
-
       </div>
-
-
     </>
   );
 };

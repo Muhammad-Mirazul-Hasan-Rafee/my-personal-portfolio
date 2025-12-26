@@ -16,6 +16,7 @@ import {
   team,
   gadget,
   coupon,
+ gamepulse,
   house,
   donate,
   architect,
@@ -40,7 +41,7 @@ export const navLinks = [
 const gitHubLinkedIn=[
   {
     githublink: "https://github.com/Muhammad-Mirazul-Hasan-Rafee",
-    linkedinlink: "https://www.linkedin.com/in/muhammad-mirazul-hasan-rafee-177463217/",
+    linkedinlink: "https://www.linkedin.com/in/muhammad-mirazul-hasan-rafee",
   },
 ]
 const services = [
@@ -175,32 +176,32 @@ const smallProjects = [
   },
 ];
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
+// const testimonials = [
+//   {
+//     testimonial:
+//       "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+//     name: "Sara Lee",
+//     designation: "CFO",
+//     company: "Acme Co",
+//     image: "https://randomuser.me/api/portraits/women/4.jpg",
+//   },
+//   {
+//     testimonial:
+//       "I've never met a web developer who truly cares about their clients' success like Rick does.",
+//     name: "Chris Brown",
+//     designation: "COO",
+//     company: "DEF Corp",
+//     image: "https://randomuser.me/api/portraits/men/5.jpg",
+//   },
+//   {
+//     testimonial:
+//       "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+//     name: "Lisa Wang",
+//     designation: "CTO",
+//     company: "456 Enterprises",
+//     image: "https://randomuser.me/api/portraits/women/6.jpg",
+//   },
+// ];
 
 const projects = [
   {
@@ -269,6 +270,32 @@ const projects = [
     source_code_link: "https://github.com/Muhammad-Mirazul-Hasan-Rafee/coupon-collecting-app",
     live_site_link: "https://coupon-collections.netlify.app",
   },
+  {
+    name: "gamepulse Web App",
+    description:
+      "A modern, interactivegamepulse review platform where users can create, manage, and explore reviews with a dynamic UI, smooth animations, secure authentication, and real-time features.Built for performance, clarity, and an engaging user experience.",
+    tags: [
+      {
+        name: "react js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "node js & express",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mongodb & .env",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "firebase",
+        color: "yellow-text-gradient",
+      },
+    ],
+    image:gamepulse,
+    source_code_link: "https://github.com/Muhammad-Mirazul-Hasan-Rafee/gamepulse-client",
+    live_site_link: "https://gamepulse-user.vercel.app",
+  },
 ];
 
-export { services, technologies, smallProjects, testimonials, projects };
+export { services, technologies, smallProjects, projects };

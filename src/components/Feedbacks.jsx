@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { SectionWrapper } from "../Higher_Order_Component";
 import { fadeIn , textVariant } from "../utils/motion";
-import { testimonials } from "../constants";
+//import { testimonials } from "../constants";
 
 const FeedbackCard = ({index , testimonial , name , designation , company , image})=>(
   <motion.div
