@@ -250,7 +250,7 @@ const projects = [
   {
     name: "gamepulse Web App",
     description:
-      "A modern, interactivegamepulse review platform where users can create, manage, and explore reviews with a dynamic UI, smooth animations, secure authentication, and real-time features.Built for performance, clarity, and an engaging user experience.",
+      "A modern, interactive gamepulse review platform where users can create, manage, and explore reviews with a dynamic UI, smooth animations, secure authentication, and real-time features.Built for performance, clarity, and an engaging user experience.",
     tags: [
       {
         name: "react js",
