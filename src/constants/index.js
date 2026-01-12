@@ -15,12 +15,12 @@ import {
   threejs,
   team,
   gadget,
- gamepulse,
+  gamepulse,
   house,
   donate,
   architect,
   bank,
-  pet
+  pet,
 } from "../assets";
 
 export const navLinks = [
@@ -37,12 +37,12 @@ export const navLinks = [
     title: "Contact",
   },
 ];
-const gitHubLinkedIn=[
+const gitHubLinkedIn = [
   {
     githublink: "https://github.com/Muhammad-Mirazul-Hasan-Rafee",
     linkedinlink: "https://www.linkedin.com/in/muhammad-mirazul-hasan-rafee",
   },
-]
+];
 const services = [
   {
     title: "Frontend Developer",
@@ -112,11 +112,9 @@ const smallProjects = [
     icon: architect,
     iconBg: "#383E56",
     date: "August 10, 2024",
-    points: [
-      "Developed a simple web application layout using html and css.",
-    
-    ],
-    github: "https://github.com/Muhammad-Mirazul-Hasan-Rafee/g3-architect-website",
+    points: ["Developed a simple web application layout using html and css."],
+    github:
+      "https://github.com/Muhammad-Mirazul-Hasan-Rafee/g3-architect-website",
     livesite: "https://g3-architects-global.netlify.app",
   },
   {
@@ -125,10 +123,9 @@ const smallProjects = [
     icon: house,
     iconBg: "#383E56",
     date: "August 23, 2024",
-    points: [
-      "Developed a simple page and maintained it's responsiveness.",  
-    ],
-    github: "https://github.com/Muhammad-Mirazul-Hasan-Rafee/House-Design-website",
+    points: ["Developed a simple page and maintained it's responsiveness."],
+    github:
+      "https://github.com/Muhammad-Mirazul-Hasan-Rafee/House-Design-website",
     livesite: "https://house-design-approach.netlify.app",
   },
   {
@@ -140,7 +137,6 @@ const smallProjects = [
     points: [
       "Built and maintained web application for donation purpose.",
       "JavaScript DOM had been applied in this context.",
-     
     ],
     github: "https://github.com/Muhammad-Mirazul-Hasan-Rafee/donate-Bangladesh",
     livesite: "https://cooperational-donate-bangladesh.netlify.app",
@@ -154,9 +150,9 @@ const smallProjects = [
     points: [
       "This site contains simple design with the idea of deposit and withdraw account balance.",
       "The functionalities were created with document object model.",
-    
     ],
-    github: "https://github.com/Muhammad-Mirazul-Hasan-Rafee/Bank-deposit-withdraw-balance",
+    github:
+      "https://github.com/Muhammad-Mirazul-Hasan-Rafee/Bank-deposit-withdraw-balance",
     livesite: "https://bankdepositecalculation.netlify.app",
   },
   {
@@ -168,7 +164,6 @@ const smallProjects = [
     points: [
       "An interesting site for pet lovers!",
       "With the combination of api as well as intermediate javascript this site allows user to choose their pets , see info and save the images of the pets. ",
-   
     ],
     github: "https://github.com/Muhammad-Mirazul-Hasan-Rafee/pet-adoption-site",
     livesite: "https://pet-adoption-jenius.netlify.app",
@@ -204,50 +199,6 @@ const smallProjects = [
 
 const projects = [
   {
-    name: "My Special Team",
-    description:
-      "Web-based platform that allows authority to select their team players and can able to group them in a different section. Players bidding price and details are included also. The main purpose is to select the best eleven.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "react_router",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwindcss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: team,
-    source_code_link: "https://github.com/Muhammad-Mirazul-Hasan-Rafee/My-Special-Team",
-    live_site_link: "https://special-team-knights.netlify.app/",
-  },
-  {
-    name: "Gadget Heaven",
-    description:
-      "Web application that enables users to select their specific category wise items and also ensures to save them at the cartlist wishlist as well as locally. Statistics are shown also for particular category.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwindcss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: gadget,
-    source_code_link: "https://github.com/Muhammad-Mirazul-Hasan-Rafee/Gadget-Heaven",
-    live_site_link: "https://gadget-heaven-global.netlify.app/",
-  },
-  {
     name: "gamepulse Web App",
     description:
       "A modern, interactive gamepulse review platform where users can create, manage, and explore reviews with a dynamic UI, smooth animations, secure authentication, and real-time features.Built for performance, clarity, and an engaging user experience.",
@@ -269,9 +220,56 @@ const projects = [
         color: "yellow-text-gradient",
       },
     ],
-    image:gamepulse,
-    source_code_link: "https://github.com/Muhammad-Mirazul-Hasan-Rafee/gamepulse-client",
+    image: gamepulse,
+    source_code_link:
+      "https://github.com/Muhammad-Mirazul-Hasan-Rafee/gamepulse-client",
     live_site_link: "https://gamepulse-user.vercel.app",
+  },
+  {
+    name: "My Special Team",
+    description:
+      "Web-based platform that allows authority to select their team players and can able to group them in a different section. Players bidding price and details are included also. The main purpose is to select the best eleven.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "react_router",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: team,
+    source_code_link:
+      "https://github.com/Muhammad-Mirazul-Hasan-Rafee/My-Special-Team",
+    live_site_link: "https://special-team-knights.netlify.app/",
+  },
+  {
+    name: "Gadget Heaven",
+    description:
+      "Web application that enables users to select their specific category wise items and also ensures to save them at the cartlist wishlist as well as locally. Statistics are shown also for particular category.",
+    tags: [
+      {
+        name: "react",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "restapi",
+        color: "green-text-gradient",
+      },
+      {
+        name: "tailwindcss",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: gadget,
+    source_code_link:
+      "https://github.com/Muhammad-Mirazul-Hasan-Rafee/Gadget-Heaven",
+    live_site_link: "https://gadget-heaven-global.netlify.app/",
   },
 ];
 
